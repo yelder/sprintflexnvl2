@@ -1,0 +1,149 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.header {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-image: url('../images/fondo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 100px;
+  align-items: center;
+  margin-top: 0px;
+}
+.logo {
+  flex: 1 1 auto;
+  height: 90px;
+}
+.logo img {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.nav {
+  flex: 5 1 auto;
+  height: 30px;
+}
+.fas,
+.fab {
+  color: grey;
+}
+a {
+  text-decoration: none;
+}
+
+.fas:hover {
+  background-color: white;
+  border-radius: 35%;
+  color: red;
+}
+.fab:hover {
+  color: blue;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100px;
+  margin-top: -10px;
+}
+.texto-principal {
+  background-color: rgba(211, 205, 205, 0.466);
+  margin-top: 7%;
+}
+h1 {
+  text-align: center;
+  color: rgba(224, 80, 80, 0.466);
+}
+.main {
+  display: flex;
+}
+.articulos {
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(207, 207, 207);
+}
+.articulo {
+  flex: 1 1 40%;
+  background-color: rgb(228, 226, 226);
+  margin: 10px 10px 0px 10px;
+  flex: 1 1 45%;
+  font-size: 13px;
+}
+img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 30px 0 0;
+  margin-top: -57px;
+  margin-left: 10px;
+}
+h2 {
+  text-transform: uppercase;
+  padding: 10px 0 0;
+  background-color: rgb(247, 63, 82);
+  color: white;
+  font-weight: bold;
+  font-size: 18;
+  margin: 0px;
+}
+
+.articulo-inferior {
+  flex: 1 1 100%;
+  background-color: rgb(228, 226, 226);
+  text-decoration: none;
+}
+.aside {
+  flex: 1 1 auto;
+}
+
+footer {
+  text-align: center;
+}
+.footer {
+  background-color: rgb(207, 207, 207);
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+  }
+  header {
+    height: 50%;
+  }
+  .texto-principal {
+    margin-top: 110px;
+  }
+  h1 {
+    font-size: 16px;
+  }
+}
